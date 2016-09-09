@@ -1,0 +1,14 @@
+{
+  "services": [
+    {
+        "id": "minio",
+        "name": "minio",
+        "tags": ["http", "s3"],
+        "port": 9000,
+        "checks": [{
+            "script": "echo '# curl -sI http://localhost:9000' ; curl -sI http://localhost:9000",
+            "interval": "10s"
+        }]
+    }
+  ]
+}
