@@ -1,6 +1,6 @@
 FROM qnib/alpn-rsyslog
 
-ARG MINIO_REL=2016-08-21T02-44-47Z
+ARG MINIO_REL=2016-09-11T17-42-18Z
 ENV GOPATH=/usr/local/
 
 RUN apk add --update go git \

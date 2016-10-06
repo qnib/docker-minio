@@ -13,9 +13,11 @@ $
 ## Service
 
 ```
-docker service create --name minio -p 9000:9000 \
+$ docker service create --name minio -p 9000:9000 \
                       -e MINIO_ACCESS_KEY=AKIAIOSFODNN7EXAMPLE \
                       -e MINIO_SECRET_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY \
                       --mount type=bind,source=/var/minio/data/,target=/export/ \
                       --mount type=bind,source=/var/minio/config/,target=/root/.minio/ \
                       qnib/minio
+$
+```
